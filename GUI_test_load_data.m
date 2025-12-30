@@ -64,14 +64,15 @@ num_frame=str2num(total_frame_num.String);
 N_frame=num_frame;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-file_start=100;
-file_end=554;
+file_start=1;
+file_end=203;
 
 % path=['U:\Direction_Finding\20251117_MaranaDroneTesting_32.45177N_111.21107W_Heading_138SE\Circle_1_offset_-7.5\'];
-path=['D:\Lunewave\Falcon_antenna\Real_measurement_data\Drone_data\20251117_MaranaDroneTesting_32.45177N_111.21107W_Heading_138SE\forward_az=0_offset_-270\'];
-% path=['D:\Lunewave\Falcon_antenna\Real_measurement_data\Drone_data\20251117_MaranaDroneTesting_32.45177N_111.21107W_Heading_138SE\left_drone_data\'];
-% path=['D:\Lunewave\Falcon_antenna\Real_measurement_data\Drone_data\20251117_MaranaDroneTesting_32.45177N_111.21107W_Heading_138SE\right_drone_data\'];
-% path=['D:\Lunewave\Falcon_antenna\Real_measurement_data\Drone_data\20251117_MaranaDroneTesting_32.45177N_111.21107W_Heading_138SE\back_drone_data\'];
+path=['U:\Direction_Finding\20251117_MaranaDroneTesting_32.45177N_111.21107W_Heading_138SE\back_az=180_offset_-6\'];
+% path=['U:\Direction_Finding\20251117_MaranaDroneTesting_32.45177N_111.21107W_Heading_138SE\forward_az=0_offset_-270\'];
+% path=['U:\Direction_Finding\20251117_MaranaDroneTesting_32.45177N_111.21107W_Heading_138SE\right_az=-90_offset_-30\'];
+% path=['U:\Direction_Finding\20251117_MaranaDroneTesting_32.45177N_111.21107W_Heading_138SE\left_az=90_offset_-14.5\'];
+
 
 t_offset=-7.5;
 M = readmatrix([path 'Session_Log.txt']);
